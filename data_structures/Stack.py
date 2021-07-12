@@ -14,7 +14,7 @@ class Stack:
     def pop(self):
         """Removes and returns the top item of the Stack.
         Returns None if stack is empty.
-        The runtime is constant time O(1).
+        The runtime is constant - O(1).
         """
         if self.items:
             return self.items.pop()
@@ -23,7 +23,7 @@ class Stack:
     def peek(self):
         """Returns top item of the Stack.
         Returns None if stack is empty.
-        The runtime is constant time O(1).
+        The runtime is constant - O(1).
         """
         if self.items:
             return self.items[-1]
@@ -31,7 +31,7 @@ class Stack:
 
     def size(self):
         """Returns the length of the list that is representing the Stack.
-        The runtime is constant time O(1).
+        The runtime is constant - O(1).
         """
         return len(self.items)
 

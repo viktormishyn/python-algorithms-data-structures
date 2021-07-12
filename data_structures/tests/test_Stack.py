@@ -23,7 +23,7 @@ def test_Stack_push():
 
 def test_Stack_pop_from_empty_stack():
     stack = Stack()
-    assert stack.pop() == None
+    assert stack.pop() is None
 
 
 def test_Stack_pop(stack):
@@ -34,7 +34,7 @@ def test_Stack_pop(stack):
 
 def test_Stack_peek_from_empty_stack():
     stack = Stack()
-    assert stack.peek() == None
+    assert stack.peek() is None
 
 
 def test_Stack_peek(stack):
