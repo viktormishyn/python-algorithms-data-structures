@@ -1,3 +1,5 @@
+# The time complexity of bubble sort is quadratic O(n^2)
+
 def sort(dataset):
     for i in range(len(dataset)-1, 0, -1):
         # start at the last index, end at the first index, decrease one step at a time
