@@ -27,6 +27,17 @@ def countdown(n):
         # sleep(0.3)
         # print('foo', n)
 
+# ==============================
+# TAIL RECURSION
+
+
+def find_in_array(array, target):
+    if not array:
+        return False
+    elif array[0] == target:
+        return True
+    return find_in_array(array[1:], target)
+
 
 if __name__ == '__main__':
     countdown(5)
