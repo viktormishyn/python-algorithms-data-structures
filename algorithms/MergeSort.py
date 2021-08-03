@@ -40,8 +40,31 @@ def sort(dataset):
     return dataset
 
 
+# def merge(l1, l2):
+#     """Merge two arrays"""
+#     result = []
+#     i = j = 0
+#     while i < len(l1) and j < len(l2):
+#         if l1[i] < l2[j]:
+#             result.append(l1[i])
+#             i += 1
+#         else:
+#             result.append(l2[j])
+#             j += 1
+#     while i < len(l1):
+#         result.append(l1[i])
+#         i += 1
+#     while j < len(l2):
+#         result.append(l2[j])
+#         j += 1
+#     return result
+
+
 if __name__ == '__main__':
     import timeit
     num = 100000
     print(timeit.timeit('sort([6, 3, 12, 27, 1, 5])',
           'from __main__ import sort', number=num))
+
+    # print(timeit.timeit('merge([1, 3, 5], [2, 4, 6])',
+    #       'from __main__ import merge', number=num))
